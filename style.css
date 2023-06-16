@@ -62,27 +62,27 @@ body {
 
 
 /* Page heading*/
-.main > h1 {
+.main h1 {
 	font-weight: bolder;
 	font-size: 5vw;
 	
 }
 
 /* Page subheading */
-.main > h2 {
+.main h2 {
 	font-weight: bold;
 	font-size: 4vw
 }
 
 /* Page subheading */
-.main > h3 {
+.main h3 {
 	font-weight: bold;
 	font-size: 3vw;
 }
 
 
 /* Page paragraphs*/
-.main > p {
+.main p {
 	font-size: 2vw;
 	padding: 0.5%;
 	text-align: justify-all;
@@ -181,10 +181,11 @@ body {
 	width: 100%;
 	
 }
-#nation-data th, #nation-data, #nation-data tr, #nation-data td {
+#nation-data th, #nation-data tr, #nation-data td {
 	border: 1px white solid;
 	padding: 0.5%;
 }
+
 
 #nation-data td {
 	font-size: 1.3vw;
@@ -197,6 +198,12 @@ body {
 	background-color: rgb(75, 75, 75);
 }
 
+#nation-data tr:hover, #nation-data td:hover {
+	color: yellow;
+	background-color: black; 
+	font-weight: bold;
+}
+
 /* Edit the flags for countries*/
 
 .nation-img {
@@ -206,4 +213,12 @@ body {
 	height: 25%;
 	width: 25%;
 	text-align: center;
+}
+
+.sectionbox {
+	border-radius: 15px;
+	background-color: rgb(150, 150, 150);
+	padding: 2%;
+	margin-bottom: 3%;
+	
 }
