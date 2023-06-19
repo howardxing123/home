@@ -1,3 +1,9 @@
+/* Name: Howard Xing */
+/* Last Edited: June 16, 2023 */
+/* File Name: style.css */
+
+
+
 /*Style sheet for website*/
 
 /* Global changes for tags */
@@ -14,6 +20,14 @@ ul {
 	font-size: 2vw;
 }
 
+h6 {
+	font-size: 0.5vw;
+}
+
+iframe {
+	height: 300px;
+	width: 100%;
+}
 
 
 /* Common styles paired with a class*/
@@ -24,7 +38,7 @@ ul {
 }
 
 .newroman {
-	font-family: "times new roman";
+	font-family: "times new roman", serif;
 }
 
 .whitetext {
@@ -35,8 +49,12 @@ ul {
 	color: rgb(255, 0, 0);
 }
 
+.tantext {
+	color: rgb(210,180,140);
+}
+
 .roboto {
-	font-family: "Roboto condensed";
+	font-family: "Roboto condensed", sans-serif;
 }
 
 
@@ -115,6 +133,9 @@ body {
 
 .box:hover {
 	background-color: rgb(0, 0, 0);
+	transform: scale(1.25);
+	transition: 0.5s;
+	
 }
 
 #homepagebuttons  img {
@@ -175,24 +196,38 @@ body {
 	color: rgb(150, 0, 0);
 }
 
-/* Nation section big data table */
-#nation-data {
+/* Styling tables */
+#nation-data, .battletable {
 	width: 100%;
 	
 }
-#nation-data th, #nation-data tr, #nation-data td {
+#nation-data th, #nation-data tr, #nation-data td, .battletable th, .battletable tr, .battletable td {
 	border: 1px white solid;
 	padding: 0.5%;
 }
 
-
 #nation-data td {
 	font-size: 1.3vw;
-	background-color: rgb(125, 125, 125);
 }
 
 #nation-data th {
 	font-size: 1.8vw;
+}
+
+.battletable td {
+	font-size: 1.8vw;
+}
+
+.battletable th {
+	font-size: 2.3vw;
+}
+
+
+#nation-data td, .battletable td {
+	background-color: rgb(125, 125, 125);
+}
+
+#nation-data th, .battletable th {
 	color: white;
 	background-color: rgb(75, 75, 75);
 }
@@ -203,21 +238,52 @@ body {
 	font-weight: bold;
 }
 
-/* Edit the flags for countries*/
+/*Creates a box for a section*/
+.sectionbox {
+	border-radius: 15px;
+	background-color: rgb(150, 150, 150);
+	padding: 2%;
+	margin-bottom: 3%;
+}
 
-.nation-img {
+/* Creates small section for images on battles */
+.battle-img {
+	float: right;
+	height: 40%;
+	width: 40%;
+}
+
+.battle-img > img {
+	height: 60%;
+	width: 100%;
+}
+
+#map:hover {
+	width: 50%;
+	height: 50%;
+	transition-duration: 0.5s;
+}
+
+/* Makes a gap for images so the text doesn't mix with images */
+.rightimage {
+	margin-right: 40%;
+}
+
+
+/* Edits images for nations*/
+
+.nation-img, #final {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	height: 25%;
 	width: 25%;
 	text-align: center;
+	
 }
 
-.sectionbox {
-	border-radius: 15px;
-	background-color: rgb(150, 150, 150);
-	padding: 2%;
-	margin-bottom: 3%;
-	
+/* America */
+.AMERICA {
+	font-weight: bolder;
+	color: rgb(10, 49, 97);
 }
